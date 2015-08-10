@@ -1,0 +1,10 @@
+development:
+ adapter: postgresql
+ port: 5432
+ username: postgres
+ password: password
+ database: vijay_dev
+
+
+
+

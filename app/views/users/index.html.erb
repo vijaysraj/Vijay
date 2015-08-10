@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+	<h1> Welcome </h1>
+	
+	<table border=1px>
+	<tr>
+		<th></th>
+		<th> First Name </th>
+		<th> Last Name </th>
+		<th>Designation </th>
+		<th> Origin </th>
+	</tr>
+	<%@users.each do |user|%>
+	<tr>
+		<td> <%=user.firstname%> </td>
+		<td> <%=user.lastname%> </td>
+		<td><%=user.designation%> </td>
+		<td> <%=user.origin%> </td>
+	</tr>
+	<%end%>
+
+	</table> <br>
+
+	<%=link_to "ADD USER",new_user_path%>
+
+</body>
+</html>
